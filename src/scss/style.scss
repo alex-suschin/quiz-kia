@@ -13,7 +13,7 @@ body {
     color: #000;
     position: relative;
     height: 100%;
-    background: #F6F3F2;
+    background: #F4F9FC;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -155,7 +155,7 @@ select {
 header {
     opacity: 0;
     transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
-    padding: 26px 0 26px 0;
+    padding: 31px 0 30px 0;
     background: #fff;
     .container {
         display: flex;
@@ -179,7 +179,7 @@ header.header-show {
     align-items: center;
     margin-right: 64px;
     img {
-        margin-right: 25px;
+        margin-right: 59px;
     }
 }
 
@@ -230,8 +230,8 @@ header.header-show {
     h1 {
         margin-top: 0;
         font-size: 41px;
-        font-weight: 500;
-        line-height: 100%;
+        font-weight: 600;
+        line-height: 130%;
         color: #000000;
         margin-bottom: 32px;
         transition: all 700ms ease, opacity 500ms ease;
@@ -412,7 +412,7 @@ header.header-show {
     text-align: left;
     background: #FFFFFF;
     color: #000;
-    box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 7px 33px rgba(217, 229, 239, 0.46);
     border-radius: 0px 16px 16px 16px;
 }
 
@@ -434,16 +434,16 @@ header.header-show {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     box-sizing: border-box;
     margin-right: 103px;
-    height: 204px;
+    height: 190px;
     margin-bottom: 30px;
-    padding: 19px 17px 13px 17px;
+    padding: 15px 17px 16px 19px;
     max-width: 160px;
     width: 100%;
-    box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 12px 21px rgba(147, 181, 206, 0.16);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -458,7 +458,7 @@ header.header-show {
     &:hover,
     &.active {
         background: $color;
-        box-shadow: 0px 4px 22px rgba(0, 59, 112, 0.27);
+        box-shadow: 0px 13px 22px rgba(5, 20, 31, 0.18);
     }
 }
 
@@ -468,19 +468,18 @@ header.header-show {
 
 .car-item__title {
     @include tr2;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 15px;
     line-height: 100%;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: left;
     color: #000;
     margin-bottom: 15px;
 }
 
 .car-item__img {
-    min-width: 232px;
-    max-width: 232px;
-    min-height: 116px;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 108px;
     width: max-content;
     position: absolute;
     top: 35px;
@@ -504,8 +503,8 @@ header.header-show {
     font-weight: normal;
     font-size: 12px;
     line-height: 100%;
-    color: #B7B7B7;
-    text-align: center;
+    color: #000;
+    text-align: left;
 }
 
 .car-item:hover .car-item__title,
@@ -518,14 +517,10 @@ header.header-show {
 .message-y {
     align-self: flex-end;
     .message-text {
-        background: #003B70;
-        box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.04);
+        background: #05141F;
+        // box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.04);
         color: #fff;
-        border-radius: 10px 0px 10px 10px;
-        -webkit-border-radius: 10px 0px 10px 10px;
-        -moz-border-radius: 10px 0px 10px 10px;
-        -ms-border-radius: 10px 0px 10px 10px;
-        -o-border-radius: 10px 0px 10px 10px;
+        border-radius: 16px 0px 16px 16px;
     }
     .name {
         text-align: right;
@@ -547,7 +542,7 @@ header.header-show {
         cursor: pointer;
         display: block;
         padding: 10px 20px 10px 20px;
-        background: #EBEBEB;
+        background: #F3F9FC;
         border-radius: 10px;
         box-sizing: border-box;
         font-weight: normal;
@@ -559,12 +554,16 @@ header.header-show {
         -moz-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         -ms-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         -o-transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
         &:first-child {
             margin-right: 16px;
         }
         &:hover,
         &.active {
-            background: #003B70;
+            background: #05141F;
             color: #fff;
         }
     }
